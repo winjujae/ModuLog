@@ -13,7 +13,7 @@
   | **분야**   | **이름**  | **역할** |
   |-----------|---------|----------------------------|
   | **음성 AI** | [조혜지](https://github.com/Hyeji-Jo)  | 음성인식 모델 파라미터 튜닝 |
-  | **음성 AI** | [김수호](https://github.com/KimSooHyo)  | 음성인식 모델 파라미터 튜닝 |
+  | **음성 AI** | [김수효](https://github.com/KimSooHyo)  | 음성인식 모델 파라미터 튜닝 |
   | **음성 AI** | [한종현](https://github.com/smilish67)  | 음성합성 모델 파라미터 튜닝 |
   | **자연어 AI** | [김주보](https://github.com/winjujae)  | 자연어 모델 파라미터 튜닝 |
 
