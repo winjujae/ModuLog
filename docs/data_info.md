@@ -1,5 +1,5 @@
 ## 한국어 대화 데이터
-- 회의 음성(AI 허브) : 한국어 회의, 다중 화자
+- 모두의 말뭉치 - 일상 대화 음성 말뭉치 2023 : 다중화자, 텍스트 전사 O
 
 ## 영어 회의 데이터셋
 - AMI Meeting Corpus : 다중 화자, 중첩 발화 포함, 텍스트 전사 O -> 100시간
@@ -10,4 +10,6 @@
   - https://groups.inf.ed.ac.uk/ami/icsi/download/
 
 ## 중국어 회의 데이터셋
-- AliMeeting : 중국어 회의, 다중 화자 포함
+- AliMeeting : 중국어 회의, 다중 화자 포함, 화자 분리 안되어있는 것 같음
+- DatatangBeijing/2657Hours-MandarinMobileTelephonyConversationalSpeechCollectionData
+  - https://www.modelscope.cn/datasets/DatatangBeijing/2657Hours-MandarinMobileTelephonyConversationalSpeechCollectionData/summary
