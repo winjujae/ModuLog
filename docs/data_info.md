@@ -3,6 +3,7 @@
 
 ## 영어 회의 데이터셋
 - AMI Meeting Corpus : 다중 화자, 중첩 발화 포함 https://groups.inf.ed.ac.uk/ami/download/
+-   https://huggingface.co/datasets/edinburghcstr/ami
 - Callhome : 전화 녹음 파일, 다중화자, 중첩 발화  https://huggingface.co/datasets/talkbank/callhome
 
 ## 중국어 회의 데이터셋
