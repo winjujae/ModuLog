@@ -9,10 +9,14 @@
 ### 2️⃣  &nbsp; 개요  
 1. 회의 녹음 파일을 입력 받음
 2. ASR: Whisper or WhisperX / Speeker Diarization: pyannote or Nemo
+   - 중첩된 음섬 40%
+   - 중첩되지 않은 음성 60% 
 3. (선택) + WvLM 대강 이런 모델 고려
 4. 회의록 전체 출력
-5. Segmentation 한,중,영 -> 각각 언어별로 요약 ( **좀 더 고민** )
-6. 요약된 회의록 기준 기계 번역
+5. 전문 기계 번역(처음엔 영어, Max(언어))
+6. 요약 모델 사용 : BART 계열
+7. GPT 사용
+8. 웹 개발
 
    
 
