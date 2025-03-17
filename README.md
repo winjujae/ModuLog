@@ -11,7 +11,7 @@
 2. ASR: Whisper or WhisperX / Speeker Diarization: pyannote or Nemo
    - 중첩된 음섬 40%
    - 중첩되지 않은 음성 60% 
-3. (선택) + WvLM 대강 이런 모델 고려
+3. (선택) + WavLM 대강 이런 모델 고려
 4. 회의록 전체 출력
 5. 전문 기계 번역(처음엔 영어, Max(언어))
 6. 요약 모델 사용 : BART 계열
