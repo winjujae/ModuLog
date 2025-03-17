@@ -37,4 +37,7 @@
 - 25.03.11 : 3/12까지 주제 선정하기
 - 25.03.12 : 화자 분리 모델 조사 (cam++, Pyannote, NeMo)
 - 25.03.13 : 한국어, 영어, 중국어 각각 언어의 대화 데이터 조사
-- 25.03.14 : 데이터셋 구축, whisper+pyannote, whisper+nemo 모델 구축
+- 25.03.14 : 데이터셋 구축, whisper+pyannote, whisper+nemo 모델 베이스라인
+- 25.03.15~16 : 데이터셋 구축
+
+- 25.03.17 : whisper+pyannote
