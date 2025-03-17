@@ -6,7 +6,7 @@ pyannote의 speaker diarization pipeline을 보유하신 데이터셋에 맞게 
 - Pyannote-segmentation 모델 파인튜닝
 - Optimizing the pipeline hyper-parameters
 
-본 가이드라인을 따르기 위해서는, 데이터셋을 다음과 같이 구성해야 합니다. ([pyannote.database](https://github.com/pyannote/pyannote-database) 참고고) <br>
+본 가이드라인을 따르기 위해서는, 데이터셋을 다음과 같이 구성해야 합니다. ([pyannote.database](https://github.com/pyannote/pyannote-database) 참고) <br>
 데이터셋 별로 포맷 변경에 필요한 작업이 다를 수 있기 때문에, 저희가 사용한 데이터셋을 포맷변환한 내용을 공유하겠습니다. (utils 폴더 내)
 
 - dataset
