@@ -16,3 +16,8 @@
   - https://www.openslr.org/119/
 - DatatangBeijing/2657Hours-MandarinMobileTelephonyConversationalSpeechCollectionData
   - https://www.modelscope.cn/datasets/DatatangBeijing/2657Hours-MandarinMobileTelephonyConversationalSpeechCollectionData/summary
+
+## 영문 회의록 데이터셋
+- QMSum : 다중 화자, 3000자 이상의 대화체 회의록
+  - https://github.com/Yale-LILY/QMSum
+  
