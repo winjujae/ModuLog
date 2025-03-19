@@ -41,3 +41,5 @@
 - 25.03.15~16 : 데이터셋 구축, 언어 모델(BART, T5) 파인튜닝
 
 - 25.03.17 : whisper+pyannote, 언어 모델 평가지표 선정 및 확인
+- 25.03.18 : Speaker Diarization 성능 비교 - Pyannote vs NeMo ( 사전학습된 기본 모델 )
+- 25.03.19 : 화자 분리모델 선정해서 성능 올리기 + whisperX 어떻게 할지 생각
