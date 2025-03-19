@@ -43,3 +43,11 @@
 - 25.03.17 : whisper+pyannote, 언어 모델 평가지표 선정 및 확인
 - 25.03.18 : Speaker Diarization 성능 비교 - Pyannote vs NeMo ( 사전학습된 기본 모델 )
 - 25.03.19 : 화자 분리모델 선정해서 성능 올리기 + whisperX 어떻게 할지 생각
+   - Pyannote : 평균 DER 32.01
+   - NeMo - telephonic : 평균 DER 43
+   - NeMo - 평균 DER 41
+ 
+   - 추가 해야할 일
+    - 한국어, 중국어, 영어 데이터 셋 Pyannote 파인튜닝
+    - 최적화 진행 (최대한 자료조사)
+    - whisper + faster_whisper 붙여서 wer, eer 비교  
