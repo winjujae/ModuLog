@@ -51,3 +51,4 @@
      - 한국어, 중국어, 영어 데이터 셋 Pyannote 파인튜닝
      - 최적화 진행 (최대한 자료조사)
      - whisper + faster_whisper 붙여서 wer, eer 비교  
+- 25.03.20 : Pyannote 파인튜닝 / Multilingual 데이터 생성
