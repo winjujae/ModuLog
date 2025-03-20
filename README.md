@@ -40,9 +40,9 @@
 - 25.03.14 : 데이터셋 구축, whisper+pyannote, whisper+nemo 모델 베이스라인, 언어 모델(BART, T5) 선정 
 - 25.03.15~16 : 데이터셋 구축, 언어 모델(BART, T5) 파인튜닝
 
-- 25.03.17 : whisper+pyannote, 언어 모델 평가지표 선정 및 확인
-- 25.03.18 : Speaker Diarization 성능 비교 - Pyannote vs NeMo ( 사전학습된 기본 모델 )
-- 25.03.19 : 화자 분리모델 선정해서 성능 올리기 + whisperX 어떻게 할지 생각
+- 25.03.17 : whisper+pyannote, 언어 모델 평가지표 선정 및 확인 + SLM -> LLM
+- 25.03.18 : Speaker Diarization 성능 비교 - Pyannote vs NeMo ( 사전학습된 기본 모델 ) + SLM -> LLM
+- 25.03.19 : 화자 분리모델 선정해서 성능 올리기 + whisperX 어떻게 할지 생각 + LLM(Long T5) 파인튜닝
    - Pyannote : 평균 DER 32.01
    - NeMo - telephonic : 평균 DER 43
    - NeMo - 평균 DER 41
@@ -51,4 +51,12 @@
      - 한국어, 중국어, 영어 데이터 셋 Pyannote 파인튜닝
      - 최적화 진행 (최대한 자료조사)
      - whisper + faster_whisper 붙여서 wer, eer 비교  
-- 25.03.20 : Pyannote 파인튜닝 / Multilingual 데이터 생성
+- 25.03.20 : Pyannote 파인튜닝 / Multilingual 데이터 생성 + 웹 구성방향 생각
+   - LAG 구축, 기존 모델들간의 평가지표 생성
+   - TTS 모델 조사
+- 25.03.21 : Pyannote 최적화 진행
+   - Whisper + 파인튜닝된 Pyannote / Fast Whisper + 파인튜닝된 Pyannote -> 음성인식 모델 WER, EER, 시간 성능 비교
+   - Whisper 모델 + 파인튜닝된 Pyannote해서 결과물 도출
+   - 긴 회의 데이터 뿐이라 짧은 회의 데이터 조사
+   - TTS 모델 구축
+   - 웹 설계 -> 주보님이 종현님 도와드리기
