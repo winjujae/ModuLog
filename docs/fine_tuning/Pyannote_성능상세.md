@@ -25,6 +25,10 @@
 ## 1) Adam + 20epoch
 - Momentum + adaptive learning rate
 - 빠른 수렴의 장점이 있지만, 과적합 위험 존재
+```py
+def configure_optimizers(self):
+    return Adam(self.parameters(), lr=1e-4)
+```  
 
 |  Epoch | loss/val/segmentation | loss/val/vad | loss/val | DiarizationErrorRate | Confusion | FalseAlarm | Miss | Threshold |
 |--------|----------------------|--------------|----------|----------------------|-----------|------------|------|-----------|
@@ -52,7 +56,11 @@
 
 ## 2) AdamW + 20epoch
 - Adam + Decoupled Weight Decay
-- L2 정규화로 일반화 성능이 향상 되지만 학습률 튜닝에 민감  
+- L2 정규화로 일반화 성능이 향상 되지만 학습률 튜닝에 민감
+```py
+def configure_optimizers(self):
+    return AdamW(self.parameters(), lr=1e-4, weight_decay=1e-2)
+```  
   
 |    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   DiarizationErrorRate/Confusion |   DiarizationErrorRate/FalseAlarm |   DiarizationErrorRate/Miss |   DiarizationErrorRate/Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
 |----|-------------------------|----------------|------------|------------------------|----------------------------------|-----------------------------------|-----------------------------|----------------------------------|---------------------------|------------------|--------------|
