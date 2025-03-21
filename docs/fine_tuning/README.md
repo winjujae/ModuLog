@@ -25,7 +25,7 @@ pyannote의 speaker diarization pipeline을 보유하신 데이터셋에 맞게 
     - test (테스트)
         - 동일
 
-## 2) NeMo 파인튜닝 [상세 기록 Link](https://github.com/Hyeji-Jo/modu/blob/3d33cc6c82ddc20cbbf5d31615e04a3a545cbf26/docs/fine_tuning/Pyannote_%EC%84%B1%EB%8A%A5%EC%83%81%EC%84%B8.md)
+## 2) NeMo 파인튜닝 [[상세 기록 Link]](https://github.com/Hyeji-Jo/modu/blob/3d33cc6c82ddc20cbbf5d31615e04a3a545cbf26/docs/fine_tuning/Pyannote_%EC%84%B1%EB%8A%A5%EC%83%81%EC%84%B8.md)
 
 
 # 2. 파인튜닝 성능  
