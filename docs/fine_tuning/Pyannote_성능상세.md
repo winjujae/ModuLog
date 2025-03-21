@@ -129,7 +129,7 @@ def configure_optimizers(self):
     return [optimizer], [scheduler]
 ```  
 
-|    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   DiarizationErrorRate/Confusion |   DiarizationErrorRate/FalseAlarm |   DiarizationErrorRate/Miss |   DiarizationErrorRate/Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
+|    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   Confusion |   FalseAlarm |   Miss |   Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
 |----|-------------------------|----------------|------------|------------------------|----------------------------------|-----------------------------------|-----------------------------|----------------------------------|---------------------------|------------------|--------------|
 |  0 |                0.407775 |        0.44465 |    0.8524  |                 0.4676 |                           0.0582 |                           0.21605 |                      0.1934 |                             0.58 |                 nan       |        nan       |    nan       |
 |  1 |                0.22825  |        0.2513  |    0.47955 |                 0.2611 |                           0.0377 |                           0.086   |                      0.1374 |                             0.62 |                   0.35855 |          0.35595 |      0.71445 |
