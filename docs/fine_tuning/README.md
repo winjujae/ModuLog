@@ -95,9 +95,5 @@ pyannote의 speaker diarization pipeline을 보유하신 데이터셋에 맞게 
 | 18 |                 0.1898  |       0.2235   |   0.4133   |                 0.2205 |                           0.0252 |                            0.0776 |                     0.1177  |                             0.58 |                   0.173   |          0.2068  |      0.3798  |
 | 19 |                 0.1877  |       0.2226   |   0.41035  |                 0.2199 |                           0.0247 |                            0.076  |                     0.1192  |                             0.58 |                   0.17215 |          0.2054  |      0.3776  |
 
-## 4) Lookahead + Adam (or RAdam)  
-  
-
-
-## 5) RAdam + CosineAnnealing  
+## 4) RAdam + CosineAnnealing  
   
