@@ -69,7 +69,7 @@ pyannote의 speaker diarization pipeline을 보유하신 데이터셋에 맞게 
 
 ## 2) AdamW + 20epoch  
   
-|    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   DiarizationErrorRate/Confusion |   DiarizationErrorRate/FalseAlarm |   DiarizationErrorRate/Miss |   DiarizationErrorRate/Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
+|    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   Confusion |   FalseAlarm |   Miss |   Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
 |----|-------------------------|----------------|------------|------------------------|----------------------------------|-----------------------------------|-----------------------------|----------------------------------|---------------------------|------------------|--------------|
 |  0 |                 0.39935 |       0.431175 |    0.8305  |                0.39435 |                          0.03865 |                           0.09995 |                      0.2557 |                             0.57 |                 nan       |        nan       |    nan       |
 |  1 |                 0.2193  |       0.24265  |    0.46195 |                0.2545  |                          0.0359  |                           0.0849  |                      0.1337 |                             0.6  |                   0.28875 |          0.2774  |      0.56615 |
@@ -83,7 +83,7 @@ pyannote의 speaker diarization pipeline을 보유하신 데이터셋에 맞게 
 
 ## 3) RAdam (Rectified Adam)  
   
-|    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   DiarizationErrorRate/Confusion |   DiarizationErrorRate/FalseAlarm |   DiarizationErrorRate/Miss |   DiarizationErrorRate/Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
+|    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   Confusion |   FalseAlarm |   Miss |   Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
 |----|-------------------------|----------------|------------|------------------------|----------------------------------|-----------------------------------|-----------------------------|----------------------------------|---------------------------|------------------|--------------|
 |  0 |                 0.3967  |       0.439475 |   0.836175 |                 0.5042 |                           0.0335 |                            0.1178 |                     0.35285 |                             0.58 |                 nan       |        nan       |    nan       |
 |  1 |                 0.2132  |       0.24265  |   0.45575  |                 0.2457 |                           0.0335 |                            0.0806 |                     0.1316  |                             0.6  |                   0.32425 |          0.3309  |      0.65515 |
@@ -97,7 +97,7 @@ pyannote의 speaker diarization pipeline을 보유하신 데이터셋에 맞게 
 
 ## 4) RAdam + CosineAnnealing  
   
-|    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   DiarizationErrorRate/Confusion |   DiarizationErrorRate/FalseAlarm |   DiarizationErrorRate/Miss |   DiarizationErrorRate/Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
+|    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   Confusion |   FalseAlarm |   Miss |   Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
 |----|-------------------------|----------------|------------|------------------------|----------------------------------|-----------------------------------|-----------------------------|----------------------------------|---------------------------|------------------|--------------|
 |  0 |                0.407775 |        0.44465 |    0.8524  |                 0.4676 |                           0.0582 |                           0.21605 |                      0.1934 |                             0.58 |                 nan       |        nan       |    nan       |
 |  1 |                0.22825  |        0.2513  |    0.47955 |                 0.2611 |                           0.0377 |                           0.086   |                      0.1374 |                             0.62 |                   0.35855 |          0.35595 |      0.71445 |
