@@ -28,7 +28,30 @@ pyannote의 speaker diarization pipeline을 보유하신 데이터셋에 맞게 
 ## NeMo 파인튜닝
 
 
-# 파인튜닝 성능
+# 파인튜닝 성능  
+- loss/val/segmentation
+    - 검증 데이터에서 segmentation loss - 음성 분할 관련 손실
+    - 낮을수록 모델이 더 정확하게 분할됨
+- loss/val/vad
+    - 검증 데이터에서 음성 활동 감지 (VAD) loss 값
+- loss/val
+    - 전체 검증 loss 값
+    - 작을수록 모델이 더 정확함
+- DiarizationErrorRate
+    - 전체 화자인식 오류율(DER)
+    - 작을수록 좋음
+- DiarizationErrorRate/Confusion
+    - 화자 간 혼동률 - 잘못된 화자 매칭 비율
+    - 낮을수록 좋음
+- DiarizationErrorRate/FalseAlarm
+    - 음성이 없는데 있다고 감지한 비율
+    - 낮을수록 좋음
+- DiarizationErrorRate/Miss
+    - 놓친 음성 비율
+    - 낮을수록 좋음
+- DiarizationErrorRate/Threshold
+    - DER 계산 시 사용된 임계값
+
 | Epoch | loss/val/segmentation | loss/val/vad | loss/val | DiarizationErrorRate | DiarizationErrorRate/Confusion | DiarizationErrorRate/FalseAlarm | DiarizationErrorRate/Miss | DiarizationErrorRate/Threshold |
 |-------|------------------------|--------------|----------|----------------------|--------------------------------|---------------------------------|---------------------------|--------------------------------|
 | 0     | 0.5552                 | 0.7175       | 1.2727   | 0.9687               | 0.0144                         | 0.0235                          | 0.9308                     | 0.6000                         |
