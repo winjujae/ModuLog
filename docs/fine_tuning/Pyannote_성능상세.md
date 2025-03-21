@@ -84,8 +84,9 @@
 from torch.optim import RAdam
 def configure_optimizers(self):
     return RAdam(self.parameters(), lr=1e-4)
-
 ```
+
+
 
 ## 4) Lookahead + Adam (or RAdam)
 - 두 개의 옵티마이저를 병렬로 사용해서 빠른 탐색 + 안정적 수렴
