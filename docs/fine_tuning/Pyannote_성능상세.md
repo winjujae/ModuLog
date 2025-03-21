@@ -112,15 +112,36 @@ def configure_optimizers(self):
 ## 4) Lookahead + Adam (or RAdam)
 - 두 개의 옵티마이저를 병렬로 사용해서 빠른 탐색 + 안정적 수렴
 ```py
-pip install lookahead_pytorch
+class Lookahead(Optimizer):
+    def __init__(self, optimizer, alpha=0.5, k=5):
+        self.optimizer = optimizer
+        self.alpha = alpha
+        self.k = k
+        self.counter = 0
+        self.state = {}
 
-from lookahead import Lookahead
-from torch.optim import RAdam
+        for group in optimizer.param_groups:
+            for p in group["params"]:
+                if p.requires_grad:
+                    self.state[p] = torch.clone(p.data).detach()
+
+    def step(self, closure=None):
+        loss = self.optimizer.step(closure)
+        self.counter += 1
+
+        if self.counter % self.k == 0:
+            for group in self.optimizer.param_groups:
+                for p in group["params"]:
+                    if p.requires_grad:
+                        param_state = self.state[p]
+                        param_state.mul_(1 - self.alpha).add_(p.data, alpha=self.alpha)
+                        p.data.copy_(param_state)
+
+        return loss
 
 def configure_optimizers(self):
     base_opt = RAdam(self.parameters(), lr=1e-4)
     return Lookahead(base_opt, k=5, alpha=0.5)
-
 ```
 
 ## 5) RAdam + CosineAnnealing
