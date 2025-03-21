@@ -52,10 +52,8 @@ pyannote의 speaker diarization pipeline을 보유하신 데이터셋에 맞게 
 - DiarizationErrorRate/Threshold
     - DER 계산 시 사용된 임계값
 
-## 1) Adam + 20epoch
-- Momentum + adaptive learning rate
-- 빠른 수렴의 장점이 있지만, 과적합 위험 존재
-
+## 1) Adam + 20epoch  
+  
 |  Epoch | loss/val/segmentation | loss/val/vad | loss/val | DiarizationErrorRate | Confusion | FalseAlarm | Miss | Threshold |
 |--------|----------------------|--------------|----------|----------------------|-----------|------------|------|-----------|
 | 0      | 0.40065              | 0.488325     | 0.88895  | 0.6246               | 0.03265   | 0.05255    | 0.5398 | 0.6300    |
@@ -69,9 +67,7 @@ pyannote의 speaker diarization pipeline을 보유하신 데이터셋에 맞게 
 | 19     | 0.18755              | 0.22245      | 0.41     | 0.2181               | 0.0244    | 0.0755     | 0.1182 | 0.5600    |
 
 
-## 2) AdamW + 20epoch
-- Adam + Decoupled Weight Decay
-- L2 정규화로 일반화 성능이 향상 되지만 학습률 튜닝에 민감  
+## 2) AdamW + 20epoch  
   
 |    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   DiarizationErrorRate/Confusion |   DiarizationErrorRate/FalseAlarm |   DiarizationErrorRate/Miss |   DiarizationErrorRate/Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
 |----|-------------------------|----------------|------------|------------------------|----------------------------------|-----------------------------------|-----------------------------|----------------------------------|---------------------------|------------------|--------------|
@@ -85,14 +81,8 @@ pyannote의 speaker diarization pipeline을 보유하신 데이터셋에 맞게 
 | 18 |                 0.18835 |       0.2233   |    0.41165 |                0.2204  |                          0.0246  |                           0.0758  |                      0.12   |                             0.58 |                   0.17325 |          0.2063  |      0.3795  |
 | 19 |                 0.1878  |       0.22205  |    0.4098  |                0.2198  |                          0.0244  |                           0.0771  |                      0.1183 |                             0.58 |                   0.17225 |          0.20485 |      0.3771  |
 
-## 3) RAdam (Rectified Adam)
-- Adam의 빠른 수렴성과 SGD의 안정성을 절충
-- 일반화 성능에서 Adam보다 좋다고 보고된 경우 많음
-```py
-from torch.optim import RAdam
-def configure_optimizers(self):
-    return RAdam(self.parameters(), lr=1e-4)
-```  
+## 3) RAdam (Rectified Adam)  
+  
 |    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   DiarizationErrorRate/Confusion |   DiarizationErrorRate/FalseAlarm |   DiarizationErrorRate/Miss |   DiarizationErrorRate/Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
 |----|-------------------------|----------------|------------|------------------------|----------------------------------|-----------------------------------|-----------------------------|----------------------------------|---------------------------|------------------|--------------|
 |  0 |                 0.3967  |       0.439475 |   0.836175 |                 0.5042 |                           0.0335 |                            0.1178 |                     0.35285 |                             0.58 |                 nan       |        nan       |    nan       |
@@ -105,28 +95,9 @@ def configure_optimizers(self):
 | 18 |                 0.1898  |       0.2235   |   0.4133   |                 0.2205 |                           0.0252 |                            0.0776 |                     0.1177  |                             0.58 |                   0.173   |          0.2068  |      0.3798  |
 | 19 |                 0.1877  |       0.2226   |   0.41035  |                 0.2199 |                           0.0247 |                            0.076  |                     0.1192  |                             0.58 |                   0.17215 |          0.2054  |      0.3776  |
 
-## 4) Lookahead + Adam (or RAdam)
-- 두 개의 옵티마이저를 병렬로 사용해서 빠른 탐색 + 안정적 수렴
-```py
-pip install lookahead_pytorch
+## 4) Lookahead + Adam (or RAdam)  
+  
 
-from lookahead import Lookahead
-from torch.optim import RAdam
 
-def configure_optimizers(self):
-    base_opt = RAdam(self.parameters(), lr=1e-4)
-    return Lookahead(base_opt, k=5, alpha=0.5)
-
-```
-
-## 5) RAdam + CosineAnnealing
-- 정규화 + 학습률 스케줄링 실험
-```py
-from torch.optim import RAdam
-from torch.optim.lr_scheduler import CosineAnnealingLR
-
-def configure_optimizers(self):
-    optimizer = RAdam(self.parameters(), lr=1e-4)
-    scheduler = CosineAnnealingLR(optimizer, T_max=20)
-    return [optimizer], [scheduler]
-```
+## 5) RAdam + CosineAnnealing  
+  
