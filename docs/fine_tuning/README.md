@@ -82,7 +82,8 @@ pyannote의 speaker diarization pipeline을 보유하신 데이터셋에 맞게 
 
 ## 2) AdamW + 20epoch
 - Adam + Decoupled Weight Decay
-- L2 정규화로 일반화 성능이 향상 되지만 학습률 튜닝에 민감
+- L2 정규화로 일반화 성능이 향상 되지만 학습률 튜닝에 민감  
+  
 |    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   DiarizationErrorRate/Confusion |   DiarizationErrorRate/FalseAlarm |   DiarizationErrorRate/Miss |   DiarizationErrorRate/Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
 |----|-------------------------|----------------|------------|------------------------|----------------------------------|-----------------------------------|-----------------------------|----------------------------------|---------------------------|------------------|--------------|
 |  0 |                 0.39935 |       0.431175 |    0.8305  |                0.39435 |                          0.03865 |                           0.09995 |                      0.2557 |                             0.57 |                 nan       |        nan       |    nan       |
