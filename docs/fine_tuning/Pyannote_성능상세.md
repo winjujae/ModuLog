@@ -62,7 +62,7 @@ def configure_optimizers(self):
     return AdamW(self.parameters(), lr=1e-4, weight_decay=1e-2)
 ```  
   
-|    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   DiarizationErrorRate/Confusion |   DiarizationErrorRate/FalseAlarm |   DiarizationErrorRate/Miss |   DiarizationErrorRate/Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
+|    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   Confusion |   FalseAlarm |   Miss |   Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
 |----|-------------------------|----------------|------------|------------------------|----------------------------------|-----------------------------------|-----------------------------|----------------------------------|---------------------------|------------------|--------------|
 |  0 |                 0.39935 |       0.431175 |    0.8305  |                0.39435 |                          0.03865 |                           0.09995 |                      0.2557 |                             0.57 |                 nan       |        nan       |    nan       |
 |  1 |                 0.2193  |       0.24265  |    0.46195 |                0.2545  |                          0.0359  |                           0.0849  |                      0.1337 |                             0.6  |                   0.28875 |          0.2774  |      0.56615 |
@@ -93,7 +93,7 @@ from torch.optim import RAdam
 def configure_optimizers(self):
     return RAdam(self.parameters(), lr=1e-4)
 ```  
-|    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   DiarizationErrorRate/Confusion |   DiarizationErrorRate/FalseAlarm |   DiarizationErrorRate/Miss |   DiarizationErrorRate/Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
+|    |   loss/val/segmentation |   loss/val/vad |   loss/val |   DiarizationErrorRate |   Confusion |   FalseAlarm |   Miss |   Threshold |   loss/train/segmentation |   loss/train/vad |   loss/train |
 |----|-------------------------|----------------|------------|------------------------|----------------------------------|-----------------------------------|-----------------------------|----------------------------------|---------------------------|------------------|--------------|
 |  0 |                 0.3967  |       0.439475 |   0.836175 |                 0.5042 |                           0.0335 |                            0.1178 |                     0.35285 |                             0.58 |                 nan       |        nan       |    nan       |
 |  1 |                 0.2132  |       0.24265  |   0.45575  |                 0.2457 |                           0.0335 |                            0.0806 |                     0.1316  |                             0.6  |                   0.32425 |          0.3309  |      0.65515 |
