@@ -52,7 +52,7 @@
      - 최적화 진행 (최대한 자료조사)
      - whisper + faster_whisper 붙여서 wer, eer 비교  
 - 25.03.20 : Pyannote 파인튜닝 / Multilingual 데이터 생성 + 웹 구성방향 생각
-   - LAG 구축, 기존 모델들간의 평가지표 생성
+   - RAG 구축, 기존 모델들간의 평가지표 생성
    - TTS 모델 조사
 - 25.03.21 : Pyannote 최적화 진행
    - Whisper + 파인튜닝된 Pyannote / Fast Whisper + 파인튜닝된 Pyannote -> 음성인식 모델 WER, EER, 시간 성능 비교
