@@ -7,16 +7,8 @@
 - 본 프로젝트는 다국어 회의 내용을 인식하고 요약하여, **회의록 작성의 효율성을 높이고 언어 장벽을 줄이는 것이 목표**
 
 ### 2️⃣  &nbsp; 개요  
-1. 회의 녹음 파일을 입력 받음
-2. ASR: Whisper or WhisperX / Speeker Diarization: pyannote or Nemo
-   - 중첩된 음섬 40%
-   - 중첩되지 않은 음성 60% 
-3. (선택) + WavLM 대강 이런 모델 고려
-4. 회의록 전체 출력
-5. 전문 기계 번역(처음엔 영어, Max(언어))
-6. 요약 모델 사용 : BART 계열
-7. GPT 사용
-8. 웹 개발
+<img width="1477" alt="image" src="https://github.com/user-attachments/assets/2a528205-523a-40ce-94e0-6ef87fe0605d" />
+
 
    
 
