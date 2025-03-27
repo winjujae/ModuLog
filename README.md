@@ -7,20 +7,14 @@
 - 본 프로젝트는 다국어 회의 내용을 인식하고 요약하여, **회의록 작성의 효율성을 높이고 언어 장벽을 줄이는 것이 목표**
 
 ### 2️⃣  &nbsp; 개요  
-<img width="1477" alt="image" src="https://github.com/user-attachments/assets/2a528205-523a-40ce-94e0-6ef87fe0605d" />
-
+<img width="1415" alt="image" src="https://github.com/user-attachments/assets/0eb9425e-f458-4bf4-951a-92cc46e140ea" />
 
    
 
-### 3️⃣  &nbsp; 진행 기간 : 25.03.10 ~ 
+### 3️⃣  &nbsp; 진행 기간 : 25.03.10 ~ 25.03.28 (19일 = 약 3주)
   
-### 4️⃣  &nbsp; Member
-  | **분야**   | **이름**  | **역할** |
-  |-----------|---------|----------------------------|
-  | **음성 AI** | [조혜지](https://github.com/Hyeji-Jo)  | 음성인식 모델 파라미터 튜닝 |
-  | **음성 AI** | [김수효](https://github.com/KimSooHyo)  | 음성인식 모델 파라미터 튜닝 |
-  | **음성 AI** | [한종현](https://github.com/smilish67)  | 음성합성 모델 파라미터 튜닝 |
-  | **자연어 AI** | [김주보](https://github.com/winjujae)  | 자연어 모델 파라미터 튜닝 |
+### 4️⃣  &nbsp; Member ([조혜지](https://github.com/Hyeji-Jo), [김수효](https://github.com/KimSooHyo), [한종현](https://github.com/smilish67), [김주보](https://github.com/winjujae) )
+<img width="1507" alt="image" src="https://github.com/user-attachments/assets/287371c6-f867-40de-91b7-fedf645a6b40" />
 
 
 
