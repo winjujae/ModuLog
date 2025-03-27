@@ -1,7 +1,7 @@
 # 다국어 회의록 요약
 
 ## 팀 소개 👀
-- Member : ([조혜지 🐰](https://github.com/Hyeji-Jo), [김수효 🐑](https://github.com/KimSooHyo), [한종현 🐰](https://github.com/smilish67), [김주보 🐮](https://github.com/winjujae) )
+- Member : ([🐰조혜지](https://github.com/Hyeji-Jo), [김수효 🐑](https://github.com/KimSooHyo), [한종현 🐰](https://github.com/smilish67), [김주보 🐮](https://github.com/winjujae) )
 <img width="1507" alt="image" src="https://github.com/user-attachments/assets/287371c6-f867-40de-91b7-fedf645a6b40" />
 
 ## 프로젝트 소개 👩🏻‍🏫 
